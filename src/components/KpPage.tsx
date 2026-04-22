@@ -31,50 +31,50 @@ const contactInfo = {
 
 const problems = [
   {
-    title: "Потеря 40-60% потенциальных клиентов",
-    desc: "Без сайта вы теряете клиентов, которые ищут ветклиники в Яндексе (78% владельцев животных начинают поиск онлайн)",
+    title: "Потеря потенциальных клиентов",
+    desc: "Владельцы животных ищут ветклиники в интернете. Без сайта они не найдут информацию о ваших услугах, ценах и врачах — и уйдут к конкурентам",
   },
   {
-    title: "3-5 часов/день на типовые звонки",
-    desc: "Администраторы тратят время на вопросы о ценах, графике работы и услугах вместо работы с клиентами",
+    title: "Время администраторов на типовые звонки",
+    desc: "Администраторы тратят время на вопросы о ценах, графике работы и услугах вместо работы с клиентами в клинике",
   },
   {
-    title: "Упущенная выручка ₽150-300К/мес",
-    desc: "Клиенты записываются к конкурентам с онлайн-записью, особенно в нерабочее время (35% записей происходит после 20:00)",
+    title: "Упущенная выручка из-за отсутствия онлайн-записи",
+    desc: "Клиенты записываются к конкурентам с онлайн-записью, особенно в нерабочее время, когда администратор недоступен",
   },
   {
     title: "Низкая конверсия из 2ГИС/Яндекс.Карт",
-    desc: "Без сайта конверсия из карт в запись составляет 2-5% вместо возможных 15-25% при наличии сайта",
+    desc: "Без сайта потенциальные клиенты видят только адрес и телефон — этого недостаточно для принятия решения о записи",
   },
 ];
 
 const solutions = [
-  { icon: TrendingUp, text: "Привлечение новых клиентов из Яндекса", metric: "+40-60% заявок" },
-  { icon: Clock, text: "Автоматизация записи на приём 24/7", metric: "35% записей после 20:00" },
-  { icon: Users, text: "Сокращение нагрузки на администраторов", metric: "-3-5 часов/день" },
-  { icon: Award, text: "Повышение доверия через профессиональный имидж", metric: "Конверсия 15-25%" },
+  { icon: TrendingUp, text: "Привлечение новых клиентов из Яндекса", metric: "Через SEO и рекламу" },
+  { icon: Clock, text: "Автоматизация записи на приём 24/7", metric: "Даже ночью" },
+  { icon: Users, text: "Сокращение нагрузки на администраторов", metric: "Меньше звонков" },
+  { icon: Award, text: "Повышение доверия через профессиональный имидж", metric: "Полная информация" },
 ];
 
 const techStack = [
   {
     name: "Next.js 16 + React 19",
-    desc: "SSG для мгновенной загрузки (0.8-1.2с), автоматическая оптимизация изображений, встроенная SEO",
-    why: "Индексация в Яндексе на 40% быстрее vs обычный React SPA",
+    desc: "Серверный рендеринг (SSR) и статическая генерация (SSG) для быстрой загрузки и лучшей индексации в поисковиках",
+    why: "Поисковики видят готовый HTML, а не пустую страницу как в обычном React SPA",
   },
   {
     name: "TypeScript",
-    desc: "Статическая типизация, автодополнение IDE, раннее обнаружение ошибок на этапе разработки",
-    why: "Снижение багов в production на 60-70% vs JavaScript",
+    desc: "Статическая типизация помогает предотвратить ошибки типов данных ещё на этапе написания кода",
+    why: "Меньше багов в production, автодополнение в редакторе, проще поддерживать код",
   },
   {
     name: "Tailwind CSS 4",
-    desc: "Utility-first CSS, минимальный размер бандла (3-5KB), адаптивный дизайн из коробки",
-    why: "Скорость разработки +50%, консистентный UI",
+    desc: "Utility-first CSS-фреймворк с минимальным размером бандла и встроенной адаптивностью",
+    why: "Быстрая разработка, консистентный дизайн, малый вес итогового CSS-файла",
   },
   {
     name: "Российский хостинг",
-    desc: "Соответствие 152-ФЗ, uptime 99.9%, автобэкапы, SSL, CDN для быстрой загрузки",
-    why: "Требование законодательства для персональных данных",
+    desc: "Соответствие 152-ФЗ о персональных данных, ежедневные автобэкапы, SSL-сертификат",
+    why: "Требование законодательства для хранения данных клиентов на территории РФ",
   },
 ];
 
@@ -401,7 +401,7 @@ export function KpPage() {
                   <div>
                     <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                       <span className="text-[#6366f1]">Базовый</span>
-                      <span className="text-slate-500 text-base">150К ₽</span>
+                      <span className="text-slate-500 text-base">90К ₽</span>
                     </h3>
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
@@ -410,7 +410,7 @@ export function KpPage() {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">ROI за год</span>
-                        <span className="font-bold text-[#6366f1]">+800%</span>
+                        <span className="font-bold text-[#6366f1]">+1300%</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">Доп. выручка/год</span>
@@ -421,7 +421,7 @@ export function KpPage() {
                   <div>
                     <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                       <span className="text-[#ec4899]">Премиум</span>
-                      <span className="text-slate-500 text-base">300К ₽</span>
+                      <span className="text-slate-500 text-base">180К ₽</span>
                     </h3>
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
@@ -430,7 +430,7 @@ export function KpPage() {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">ROI за год</span>
-                        <span className="font-bold text-[#ec4899]">+400%</span>
+                        <span className="font-bold text-[#ec4899]">+670%</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">Доп. выручка/год</span>
@@ -441,7 +441,7 @@ export function KpPage() {
                   <div>
                     <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                       <span className="text-[#f59e0b]">AI</span>
-                      <span className="text-slate-500 text-base">500К ₽</span>
+                      <span className="text-slate-500 text-base">320К ₽</span>
                     </h3>
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
@@ -450,7 +450,7 @@ export function KpPage() {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">ROI за год</span>
-                        <span className="font-bold text-[#f59e0b]">+240%</span>
+                        <span className="font-bold text-[#f59e0b]">+375%</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">Доп. выручка/год</span>
@@ -536,7 +536,7 @@ export function KpPage() {
                       Базовый
                     </div>
                     <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-5xl font-bold">150 000</span>
+                      <span className="text-5xl font-bold">90 000</span>
                       <span className="text-2xl text-slate-400">₽</span>
                     </div>
                     <p className="text-sm text-slate-400 mb-4">
@@ -567,8 +567,9 @@ export function KpPage() {
                   </div>
                   <div className="pt-6 border-t border-white/10">
                     <p className="text-xs text-slate-500">
-                      <strong className="text-slate-400">Обоснование цены:</strong> ~80 часов работы × 1875₽/час. 
-                      Включает дизайн, разработку, тестирование, деплой. Средняя ставка full-stack в РФ 2026: 1500-2500₽/час.
+                      <strong className="text-slate-400">Обоснование цены:</strong> ~80 часов работы × 1125₽/час. 
+                      Включает дизайн, разработку, тестирование, деплой. Я Middle+ разработчик без опыта работы с бизнесом, 
+                      поэтому цена ниже рыночной (senior берёт 1500-2500₽/час).
                     </p>
                   </div>
                 </div>
@@ -586,7 +587,7 @@ export function KpPage() {
                       Премиум
                     </div>
                     <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-5xl font-bold bg-gradient-to-r from-[#ec4899] to-[#f59e0b] bg-clip-text text-transparent">300 000</span>
+                      <span className="text-5xl font-bold bg-gradient-to-r from-[#ec4899] to-[#f59e0b] bg-clip-text text-transparent">180 000</span>
                       <span className="text-2xl text-slate-400">₽</span>
                     </div>
                     <p className="text-sm text-slate-400 mb-4">
@@ -624,8 +625,9 @@ export function KpPage() {
                   </div>
                   <div className="pt-6 border-t border-white/10">
                     <p className="text-xs text-slate-500">
-                      <strong className="text-slate-400">Обоснование цены:</strong> ~160 часов работы × 1875₽/час. 
-                      Включает backend API, базу данных, админку, интеграции, обучение.
+                      <strong className="text-slate-400">Обоснование цены:</strong> ~160 часов работы × 1125₽/час. 
+                      Включает backend API, базу данных, админку, интеграции, обучение. Цена учитывает мой уровень (Middle+) 
+                      и отсутствие опыта работы с бизнесом.
                     </p>
                   </div>
                 </div>
@@ -638,10 +640,13 @@ export function KpPage() {
                   <Award className="w-5 h-5 text-[#f59e0b] shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-semibold text-slate-200 mb-2">Почему эти цены?</h3>
+                    <p className="text-sm text-slate-400 leading-relaxed mb-3">
+                      Я Middle+ full-stack разработчик без опыта работы с бизнесом напрямую. Мои цены ниже рыночных 
+                      (senior-разработчики берут 200-450К₽ за аналогичные проекты по данным Workspace, Habr Career 2026).
+                    </p>
                     <p className="text-sm text-slate-400 leading-relaxed">
-                      Средняя стоимость разработки сайта для ветклиники в РФ 2026: 200-450К₽ (по данным Workspace, Habr Career). 
-                      Ставка full-stack разработчика: 1500-2500₽/час. Мои цены соответствуют рынку при работе напрямую без агентств. 
-                      Передаю исходный код, документацию и обучаю работе с системой.
+                      Передаю полный исходный код, документацию и обучаю работе с системой. Работаю напрямую без агентств, 
+                      что позволяет снизить стоимость при сохранении качества.
                     </p>
                   </div>
                 </div>
@@ -676,7 +681,7 @@ export function KpPage() {
                 <FadeIn delay={0.1}>
                   <div className="relative rounded-2xl border-2 border-[#f59e0b]/40 bg-gradient-to-br from-[#f59e0b]/15 via-[#ec4899]/10 to-[#6366f1]/5 p-8 backdrop-blur-sm">
                     <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-5xl font-bold bg-gradient-to-r from-[#f59e0b] via-[#ec4899] to-[#6366f1] bg-clip-text text-transparent">500 000</span>
+                      <span className="text-5xl font-bold bg-gradient-to-r from-[#f59e0b] via-[#ec4899] to-[#6366f1] bg-clip-text text-transparent">320 000</span>
                       <span className="text-2xl text-slate-400">₽</span>
                     </div>
                     <p className="text-sm text-slate-400 mb-4">
@@ -708,10 +713,11 @@ export function KpPage() {
                       ))}
                     </div>
                     <div className="pt-6 mt-6 border-t border-white/10">
-                      <p className="text-xs text-slate-500">
-                        <strong className="text-slate-400">Обоснование цены:</strong> ~280 часов работы × 1785₽/час. 
-                        Включает интеграцию OpenAI API, обучение модели, разработку логики диалогов, тестирование, мониторинг.
-                      </p>
+                    <p className="text-xs text-slate-500">
+                      <strong className="text-slate-400">Обоснование цены:</strong> ~280 часов работы × 1143₽/час. 
+                      Включает интеграцию OpenAI API, обучение модели, разработку логики диалогов, тестирование, мониторинг. 
+                      Это сложная задача, требующая работы с AI API и тщательного тестирования.
+                    </p>
                     </div>
                   </div>
                 </FadeIn>
@@ -885,16 +891,16 @@ export function KpPage() {
                 <div className="rounded-xl p-8 border-gradient backdrop-blur-sm">
                   <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
                     <span className="text-[#6366f1]">Базовый</span>
-                    <span className="text-slate-500">150К ₽</span>
+                    <span className="text-slate-500">90К ₽</span>
                   </h3>
                   <div className="space-y-4">
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#6366f1]/5 border border-[#6366f1]/10">
                       <span className="text-slate-400">Предоплата</span>
-                      <span className="font-bold text-lg">75К ₽ <span className="text-sm text-slate-500">(50%)</span></span>
+                      <span className="font-bold text-lg">45К ₽ <span className="text-sm text-slate-500">(50%)</span></span>
                     </div>
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#6366f1]/5 border border-[#6366f1]/10">
                       <span className="text-slate-400">После завершения</span>
-                      <span className="font-bold text-lg">75К ₽ <span className="text-sm text-slate-500">(50%)</span></span>
+                      <span className="font-bold text-lg">45К ₽ <span className="text-sm text-slate-500">(50%)</span></span>
                     </div>
                   </div>
                 </div>
@@ -903,20 +909,20 @@ export function KpPage() {
                 <div className="rounded-xl p-8 border-2 border-[#ec4899]/20 bg-gradient-to-br from-[#ec4899]/5 to-transparent backdrop-blur-sm">
                   <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
                     <span className="text-[#ec4899]">Премиум</span>
-                    <span className="text-slate-500">300К ₽</span>
+                    <span className="text-slate-500">180К ₽</span>
                   </h3>
                   <div className="space-y-4">
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#ec4899]/5 border border-[#ec4899]/10">
                       <span className="text-slate-400">Предоплата</span>
-                      <span className="font-bold text-lg">120К ₽ <span className="text-sm text-slate-500">(40%)</span></span>
+                      <span className="font-bold text-lg">72К ₽ <span className="text-sm text-slate-500">(40%)</span></span>
                     </div>
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#ec4899]/5 border border-[#ec4899]/10">
                       <span className="text-slate-400">После разработки</span>
-                      <span className="font-bold text-lg">90К ₽ <span className="text-sm text-slate-500">(30%)</span></span>
+                      <span className="font-bold text-lg">54К ₽ <span className="text-sm text-slate-500">(30%)</span></span>
                     </div>
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#ec4899]/5 border border-[#ec4899]/10">
                       <span className="text-slate-400">После завершения</span>
-                      <span className="font-bold text-lg">90К ₽ <span className="text-sm text-slate-500">(30%)</span></span>
+                      <span className="font-bold text-lg">54К ₽ <span className="text-sm text-slate-500">(30%)</span></span>
                     </div>
                   </div>
                 </div>
@@ -925,20 +931,20 @@ export function KpPage() {
                 <div className="rounded-xl p-8 border-2 border-[#f59e0b]/20 bg-gradient-to-br from-[#f59e0b]/5 to-transparent backdrop-blur-sm">
                   <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
                     <span className="text-[#f59e0b]">AI</span>
-                    <span className="text-slate-500">500К ₽</span>
+                    <span className="text-slate-500">320К ₽</span>
                   </h3>
                   <div className="space-y-4">
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#f59e0b]/5 border border-[#f59e0b]/10">
                       <span className="text-slate-400 text-sm">Предоплата</span>
-                      <span className="font-bold">200К ₽ <span className="text-xs text-slate-500">(40%)</span></span>
+                      <span className="font-bold">128К ₽ <span className="text-xs text-slate-500">(40%)</span></span>
                     </div>
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#f59e0b]/5 border border-[#f59e0b]/10">
                       <span className="text-slate-400 text-sm">После основной разработки</span>
-                      <span className="font-bold">150К ₽ <span className="text-xs text-slate-500">(30%)</span></span>
+                      <span className="font-bold">96К ₽ <span className="text-xs text-slate-500">(30%)</span></span>
                     </div>
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#f59e0b]/5 border border-[#f59e0b]/10">
                       <span className="text-slate-400 text-sm">После завершения</span>
-                      <span className="font-bold">150К ₽ <span className="text-xs text-slate-500">(30%)</span></span>
+                      <span className="font-bold">96К ₽ <span className="text-xs text-slate-500">(30%)</span></span>
                     </div>
                   </div>
                 </div>
