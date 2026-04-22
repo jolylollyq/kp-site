@@ -271,78 +271,8 @@ export function KpPage() {
                 </div>
               </div>
             </div>
-              </FadeIn>
-
-              {/* AI Package */}
-              <FadeIn delay={0.2}>
-                <div className="relative rounded-2xl border-2 border-[#f59e0b]/40 bg-gradient-to-br from-[#f59e0b]/15 via-[#ec4899]/10 to-[#6366f1]/5 p-8 backdrop-blur-sm hover:border-[#f59e0b]/60 transition-all duration-300 shadow-elegant">
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-gradient-to-r from-[#f59e0b] to-[#ec4899] text-white text-xs font-bold shadow-glow">
-                    Инновация 2026
-                  </div>
-                  <div className="mb-8">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f59e0b]/10 text-[#f59e0b] text-xs font-semibold mb-4">
-                      <Sparkles className="w-3 h-3" />
-                      AI-Интеграция
-                    </div>
-                    <div className="flex items-baseline gap-2 mb-2">
-                      <span className="text-5xl font-bold bg-gradient-to-r from-[#f59e0b] via-[#ec4899] to-[#6366f1] bg-clip-text text-transparent">500 000</span>
-                      <span className="text-2xl text-slate-400">₽</span>
-                    </div>
-                    <p className="text-sm text-slate-400 mb-4">
-                      Срок: 30–35 рабочих дней
-                    </p>
-                    <div className="flex items-center gap-2 text-xs text-[#f59e0b]">
-                      <TrendingUp className="w-3 h-3" />
-                      <span>Окупаемость: 3-5 месяцев</span>
-                    </div>
-                  </div>
-                  <div className="space-y-3 mb-6">
-                    <p className="text-sm font-semibold text-[#f59e0b] mb-4 flex items-center gap-2">
-                      <ArrowRight className="w-4 h-4" />
-                      Всё из премиум пакета +
-                    </p>
-                    {[
-                      "ИИ-ассистент на базе GPT-4 для консультаций",
-                      "Автоматический подбор специалиста по симптомам",
-                      "Помощь в записи на приём через чат 24/7",
-                      "Ответы на типовые вопросы о клинике и услугах",
-                      "Интеграция с Telegram/WhatsApp/сайтом",
-                      "Обучение ИИ на базе знаний вашей клиники",
-                      "Аналитика диалогов и популярных запросов",
-                      "Автоматическая эскалация к администратору",
-                      "Многоязычная поддержка (RU/EN)",
-                      "Персонализация ответов под тон клиники",
-                      "6 месяцев технической поддержки",
-                      "До 20 часов доработок и дообучения ИИ",
-                    ].map((item, i) => (
-                      <div key={i} className="flex gap-3">
-                        <Sparkles className="h-5 w-5 text-[#f59e0b] shrink-0 mt-0.5" />
-                        <span className="text-sm text-slate-300">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="pt-6 border-t border-white/10 space-y-4">
-                    <div className="rounded-lg p-4 bg-[#f59e0b]/10 border border-[#f59e0b]/20">
-                      <h4 className="text-sm font-semibold text-[#f59e0b] mb-2 flex items-center gap-2">
-                        <Zap className="w-4 h-4" />
-                        Как работает ИИ-ассистент
-                      </h4>
-                      <ul className="text-xs text-slate-400 space-y-1.5">
-                        <li>• Клиент описывает проблему питомца в чате</li>
-                        <li>• ИИ анализирует симптомы и рекомендует специалиста</li>
-                        <li>• Предлагает свободные слоты для записи</li>
-                        <li>• Отвечает на вопросы о ценах, графике, услугах</li>
-                        <li>• При сложных случаях передаёт диалог администратору</li>
-                      </ul>
-                    </div>
-                    <p className="text-xs text-slate-500">
-                      <strong className="text-slate-400">Обоснование цены:</strong> ~280 часов работы × 1785₽/час. 
-                      Включает интеграцию OpenAI API, обучение модели, разработку логики диалогов, тестирование, мониторинг.
-                    </p>
-                  </div>
-                </div>
-              </FadeIn>
-            </div>
+          </FadeIn>
+        </div>
       </section>
 
       {/* Problem */}
@@ -596,7 +526,7 @@ export function KpPage() {
                 Прозрачное ценообразование без скрытых платежей
               </p>
             </FadeIn>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Basic */}
               <FadeIn>
                 <div className="relative rounded-2xl border border-[#6366f1]/20 bg-gradient-to-br from-[#6366f1]/5 to-transparent p-8 backdrop-blur-sm hover:border-[#6366f1]/40 transition-all duration-300">
@@ -717,6 +647,128 @@ export function KpPage() {
                 </div>
               </div>
             </FadeIn>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* AI Integration */}
+      <AnimatedSection className="py-16 sm:py-20 lg:py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <FadeIn>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#f59e0b] to-[#ec4899] flex items-center justify-center">
+                  <Sparkles className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
+                  <span className="bg-gradient-to-r from-[#f59e0b] via-[#ec4899] to-[#6366f1] bg-clip-text text-transparent">AI-Интеграция</span>
+                </h2>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <p className="text-slate-400 text-lg mb-12 max-w-2xl">
+                ИИ-ассистент, который помогает клиентам записаться на приём и подбирает специалиста
+              </p>
+            </FadeIn>
+
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+              <div className="lg:col-span-3 space-y-4">
+                <FadeIn delay={0.1}>
+                  <div className="relative rounded-2xl border-2 border-[#f59e0b]/40 bg-gradient-to-br from-[#f59e0b]/15 via-[#ec4899]/10 to-[#6366f1]/5 p-8 backdrop-blur-sm">
+                    <div className="flex items-baseline gap-2 mb-2">
+                      <span className="text-5xl font-bold bg-gradient-to-r from-[#f59e0b] via-[#ec4899] to-[#6366f1] bg-clip-text text-transparent">500 000</span>
+                      <span className="text-2xl text-slate-400">₽</span>
+                    </div>
+                    <p className="text-sm text-slate-400 mb-4">
+                      Срок: 30–35 рабочих дней • Окупаемость: 3-5 месяцев
+                    </p>
+                    <p className="text-sm font-semibold text-[#f59e0b] mb-4 flex items-center gap-2">
+                      <ArrowRight className="w-4 h-4" />
+                      Включает всё из премиум пакета +
+                    </p>
+                    <div className="space-y-3">
+                      {[
+                        "ИИ-ассистент на базе GPT-4 для консультаций",
+                        "Автоматический подбор специалиста по симптомам",
+                        "Помощь в записи на приём через чат 24/7",
+                        "Ответы на типовые вопросы о клинике и услугах",
+                        "Интеграция с Telegram/WhatsApp/сайтом",
+                        "Обучение ИИ на базе знаний вашей клиники",
+                        "Аналитика диалогов и популярных запросов",
+                        "Автоматическая эскалация к администратору",
+                        "Многоязычная поддержка (RU/EN)",
+                        "Персонализация ответов под тон клиники",
+                        "6 месяцев технической поддержки",
+                        "До 20 часов доработок и дообучения ИИ",
+                      ].map((item, i) => (
+                        <div key={i} className="flex gap-3">
+                          <Sparkles className="h-5 w-5 text-[#f59e0b] shrink-0 mt-0.5" />
+                          <span className="text-sm text-slate-300">{item}</span>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="pt-6 mt-6 border-t border-white/10">
+                      <p className="text-xs text-slate-500">
+                        <strong className="text-slate-400">Обоснование цены:</strong> ~280 часов работы × 1785₽/час. 
+                        Включает интеграцию OpenAI API, обучение модели, разработку логики диалогов, тестирование, мониторинг.
+                      </p>
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
+
+              <div className="lg:col-span-2 space-y-4">
+                <FadeIn delay={0.2}>
+                  <div className="rounded-2xl p-6 border-2 border-[#f59e0b]/20 bg-[#f59e0b]/5 backdrop-blur-sm">
+                    <h3 className="text-sm font-bold text-[#f59e0b] mb-4 flex items-center gap-2">
+                      <Zap className="w-4 h-4" />
+                      Как работает ИИ-ассистент
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="flex gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-[#f59e0b]/20 flex items-center justify-center shrink-0 text-[#f59e0b] text-sm font-bold">1</div>
+                        <div>
+                          <p className="text-sm font-medium text-slate-200">Клиент пишет в чат</p>
+                          <p className="text-xs text-slate-400">Описывает проблему питомца на естественном языке</p>
+                        </div>
+                      </div>
+                      <div className="flex gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-[#ec4899]/20 flex items-center justify-center shrink-0 text-[#ec4899] text-sm font-bold">2</div>
+                        <div>
+                          <p className="text-sm font-medium text-slate-200">ИИ анализирует симптомы</p>
+                          <p className="text-xs text-slate-400">Рекомендует подходящего специалиста</p>
+                        </div>
+                      </div>
+                      <div className="flex gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-[#6366f1]/20 flex items-center justify-center shrink-0 text-[#6366f1] text-sm font-bold">3</div>
+                        <div>
+                          <p className="text-sm font-medium text-slate-200">Предлагает запись</p>
+                          <p className="text-xs text-slate-400">Показывает свободные слоты выбранного врача</p>
+                        </div>
+                      </div>
+                      <div className="flex gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-[#8b5cf6]/20 flex items-center justify-center shrink-0 text-[#8b5cf6] text-sm font-bold">4</div>
+                        <div>
+                          <p className="text-sm font-medium text-slate-200">Подтверждение</p>
+                          <p className="text-xs text-slate-400">Клиент подтверждает запись, получает уведомление</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </FadeIn>
+
+                <FadeIn delay={0.3}>
+                  <div className="rounded-2xl p-6 border border-[#ec4899]/20 bg-[#ec4899]/5 backdrop-blur-sm">
+                    <h3 className="text-sm font-bold text-[#ec4899] mb-3">Важно</h3>
+                    <p className="text-xs text-slate-400 leading-relaxed">
+                      ИИ-ассистент <strong className="text-slate-300">не ставит диагнозы</strong> и не заменяет ветеринарного врача. 
+                      Он помогает клиенту выбрать подходящего специалиста и записаться на приём. 
+                      При сложных случаях диалог автоматически передаётся администратору.
+                    </p>
+                  </div>
+                </FadeIn>
+              </div>
+            </div>
           </div>
         </div>
       </AnimatedSection>
