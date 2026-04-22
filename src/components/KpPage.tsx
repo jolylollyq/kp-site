@@ -347,7 +347,7 @@ export function KpPage() {
         </div>
       </AnimatedSection>
 
-      {/* ROI Section */}
+      {/* Why It Pays Off */}
       <AnimatedSection className="py-16 sm:py-20 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -357,92 +357,81 @@ export function KpPage() {
                   <TrendingUp className="w-6 h-6 text-white" />
                 </div>
                 <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
-                  Окупаемость
+                  Почему это окупается
                 </h2>
               </div>
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="text-slate-400 text-lg mb-12 max-w-2xl">
-                Расчёт возврата инвестиций для средней ветклиники
+                Мы не обещаем miracles — мы считаем риски
               </p>
             </FadeIn>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <FadeIn delay={0.1}>
-                <div className="rounded-xl p-6 border-gradient backdrop-blur-sm">
-                  <div className="text-sm text-slate-400 mb-2">Средний чек</div>
-                  <div className="text-3xl font-bold mb-1">2 500 ₽</div>
-                  <div className="text-xs text-slate-500">за приём в ветклинике</div>
+                <div className="rounded-2xl p-8 border border-red-500/20 bg-gradient-to-br from-red-500/5 to-transparent backdrop-blur-sm">
+                  <h3 className="font-bold text-xl mb-6 text-red-400">Что вы теряете без сайта</h3>
+                  <div className="space-y-5">
+                    <div className="flex gap-3">
+                      <div className="w-2 h-2 rounded-full bg-red-400 shrink-0 mt-2.5" />
+                      <div>
+                        <p className="text-sm text-slate-200 mb-1">Клиенты, которые ищут вечером</p>
+                        <p className="text-xs text-slate-400">Значительная часть записей происходит после 20:00 — с телефона, когда администратор недоступен. Без онлайн-записи эти клиенты уходят к конкурентам</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-3">
+                      <div className="w-2 h-2 rounded-full bg-red-400 shrink-0 mt-2.5" />
+                      <div>
+                        <p className="text-sm text-slate-200 mb-1">Низкая конверсия из карт</p>
+                        <p className="text-xs text-slate-400">2ГИС и Яндекс.Карты дают лишь адрес и телефон — этого недостаточно для принятия решения. Сайт увеличивает конверсию в запись в несколько раз</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-3">
+                      <div className="w-2 h-2 rounded-full bg-red-400 shrink-0 mt-2.5" />
+                      <div>
+                        <p className="text-sm text-slate-200 mb-1">Упущенная выручка сопоставима со стоимостью сайта</p>
+                        <p className="text-xs text-slate-400">По самым скромным оценкам, потеря клиентов за 1-2 месяца покрывает стоимость Премиум-пакета. За год — в разы больше</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </FadeIn>
+
               <FadeIn delay={0.15}>
-                <div className="rounded-xl p-6 border-gradient backdrop-blur-sm">
-                  <div className="text-sm text-slate-400 mb-2">Новых записей/мес</div>
-                  <div className="text-3xl font-bold mb-1 text-[#6366f1]">+40-80</div>
-                  <div className="text-xs text-slate-500">через сайт, SEO и ИИ-бота</div>
+                <div className="rounded-2xl p-8 border border-[#6366f1]/20 bg-gradient-to-br from-[#6366f1]/5 to-transparent backdrop-blur-sm">
+                  <h3 className="font-bold text-xl mb-6 text-[#6366f1]">Гарантированная экономия</h3>
+                  <div className="space-y-5">
+                    <div className="flex gap-3">
+                      <div className="w-2 h-2 rounded-full bg-[#6366f1] shrink-0 mt-2.5" />
+                      <div>
+                        <p className="text-sm text-slate-200 mb-1">Высвобождение времени администратора</p>
+                        <p className="text-xs text-slate-400">Онлайн-запись и ответы на типовые вопросы экономят 3-5 часов работы администратора в день. При окладе ~50 000 ₽/мес это ~30-45К ₽/мес экономии</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-3">
+                      <div className="w-2 h-2 rounded-full bg-[#6366f1] shrink-0 mt-2.5" />
+                      <div>
+                        <p className="text-sm text-slate-200 mb-1">Окупаемость только за счёт экономии</p>
+                        <p className="text-xs text-slate-400">Премиум-пакет (180К ₽) окупается за 4-6 месяцев только за счёт высвобождения времени сотрудника — без учёта новых клиентов</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-3">
+                      <div className="w-2 h-2 rounded-full bg-[#6366f1] shrink-0 mt-2.5" />
+                      <div>
+                        <p className="text-sm text-slate-200 mb-1">Новые клиенты — бонус сверху</p>
+                        <p className="text-xs text-slate-400">Привлечение новых клиентов через поиск зависит от вашей маркетинговой стратегии. Мы обеспечиваем инструмент — результат зависит от его использования</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </FadeIn>
             </div>
 
             <FadeIn delay={0.25}>
-              <div className="rounded-2xl p-8 bg-gradient-to-br from-[#6366f1]/10 via-[#8b5cf6]/5 to-[#ec4899]/10 border border-[#6366f1]/20 backdrop-blur-sm">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <div>
-                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                      <span className="text-[#6366f1]">Базовый</span>
-                      <span className="text-slate-500 text-base">90К ₽</span>
-                    </h3>
-                    <div className="space-y-3 text-sm">
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">Окупаемость</span>
-                        <span className="font-bold text-[#6366f1]">2-3 мес</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">ROI за год</span>
-                        <span className="font-bold text-[#6366f1]">+340-680%</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                      <span className="text-[#ec4899]">Премиум</span>
-                      <span className="text-slate-500 text-base">180К ₽</span>
-                    </h3>
-                    <div className="space-y-3 text-sm">
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">Окупаемость</span>
-                        <span className="font-bold text-[#ec4899]">3-4 мес</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">ROI за год</span>
-                        <span className="font-bold text-[#ec4899]">+120-340%</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                      <span className="text-[#f59e0b]">AI</span>
-                      <span className="text-slate-500 text-base">320К ₽</span>
-                    </h3>
-                    <div className="space-y-3 text-sm">
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">Окупаемость</span>
-                        <span className="font-bold text-[#f59e0b]">4-6 мес</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">ROI за год</span>
-                        <span className="font-bold text-[#f59e0b]">+56-210%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-6 pt-6 border-t border-white/10">
-                  <p className="text-xs text-slate-500 leading-relaxed">
-                    * Консервативная оценка. Расчёт: средний чек ~2500₽, 20-40 новых записей/мес после выхода на стабильный трафик 
-                    (первые 2-3 месяца трафик минимален). Фактические результаты зависят от конкуренции в вашем районе, 
-                    качества услуг, контекстной рекламы и SEO-продвижения. Сайт — это инструмент, а не гарантия продаж.
-                  </p>
-                </div>
+              <div className="mt-8 rounded-xl p-6 border border-[#f59e0b]/20 bg-[#f59e0b]/5 backdrop-blur-sm">
+                <p className="text-sm text-slate-300 text-center">
+                  <strong className="text-[#f59e0b]">Вы не тратите деньги на сайт.</strong> Вы страхуете себя от потери клиентов и освобождаете время сотрудников. Новые клиенты — приятный бонус.
+                </p>
               </div>
             </FadeIn>
           </div>
@@ -517,13 +506,9 @@ export function KpPage() {
                       <span className="text-5xl font-bold">90 000</span>
                       <span className="text-2xl text-slate-400">₽</span>
                     </div>
-                    <p className="text-sm text-slate-400 mb-4">
+                    <p className="text-sm text-slate-400">
                       Срок: 10–14 рабочих дней
                     </p>
-                    <div className="flex items-center gap-2 text-xs text-[#6366f1]">
-                      <TrendingUp className="w-3 h-3" />
-                      <span>Окупаемость: 2-3 месяца</span>
-                    </div>
                   </div>
                   <div className="space-y-3 mb-6">
                     {[
@@ -568,13 +553,9 @@ export function KpPage() {
                       <span className="text-5xl font-bold bg-gradient-to-r from-[#ec4899] to-[#f59e0b] bg-clip-text text-transparent">180 000</span>
                       <span className="text-2xl text-slate-400">₽</span>
                     </div>
-                    <p className="text-sm text-slate-400 mb-4">
+                    <p className="text-sm text-slate-400">
                       Срок: 20–25 рабочих дней
                     </p>
-                    <div className="flex items-center gap-2 text-xs text-[#ec4899]">
-                      <TrendingUp className="w-3 h-3" />
-                      <span>Окупаемость: 3-4 месяца</span>
-                    </div>
                   </div>
                   <div className="space-y-3 mb-6">
                     <p className="text-sm font-semibold text-[#ec4899] mb-4 flex items-center gap-2">
@@ -663,7 +644,7 @@ export function KpPage() {
                       <span className="text-2xl text-slate-400">₽</span>
                     </div>
                     <p className="text-sm text-slate-400 mb-4">
-                      Срок: 30–35 рабочих дней • Окупаемость: 4-6 месяцев
+                      Срок: 30–35 рабочих дней
                     </p>
                     <p className="text-sm font-semibold text-[#f59e0b] mb-4 flex items-center gap-2">
                       <ArrowRight className="w-4 h-4" />
