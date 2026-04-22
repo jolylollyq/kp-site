@@ -514,12 +514,12 @@ export function KpPage() {
                     {[
                       "Главная, О клинике, Услуги, Врачи, Контакты",
                       "Онлайн-запись на приём с выбором врача и времени",
-                      "Адаптивный дизайн (mobile-first подход)",
+                      "Адаптивный дизайн (оптимизирован для мобильных — основной трафик идёт с телефонов)",
                       "Интеграция с Яндекс.Картами",
                       "Размещение на российском хостинге",
                       "SSL-сертификат (HTTPS)",
                       "Базовая SEO-оптимизация (meta, schema.org)",
-                      "Яндекс.Метрика + Google Analytics 4",
+                      "Яндекс.Метрика для отслеживания посещаемости",
                       "1 месяц технической поддержки",
                     ].map((item, i) => (
                       <div key={i} className="flex gap-3">
@@ -542,7 +542,7 @@ export function KpPage() {
               <FadeIn delay={0.1}>
                 <div className="relative rounded-2xl border-2 border-[#ec4899]/30 bg-gradient-to-br from-[#ec4899]/10 via-[#8b5cf6]/5 to-transparent p-8 backdrop-blur-sm hover:border-[#ec4899]/50 transition-all duration-300 shadow-elegant">
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full gradient-accent text-white text-xs font-bold shadow-glow">
-                    Рекомендуем для роста
+                    Рекомендую для роста
                   </div>
                   <div className="mb-8">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ec4899]/10 text-[#ec4899] text-xs font-semibold mb-4">
@@ -652,16 +652,15 @@ export function KpPage() {
                     </p>
                     <div className="space-y-3">
                       {[
-                        "ИИ-ассистент на базе GPT-4 для консультаций",
+                        "ИИ-ассистент на лучшей LLM по соотношению цена/качество — минимум затрат, максимум отдачи",
                         "Автоматический подбор специалиста по симптомам",
                         "Помощь в записи на приём через чат 24/7",
                         "Ответы на типовые вопросы о клинике и услугах",
-                        "Интеграция с Telegram/WhatsApp/сайтом",
+                        "Интеграция с Telegram/Max/сайтом",
                         "Обучение ИИ на базе знаний вашей клиники",
                         "Аналитика диалогов и популярных запросов",
                         "Автоматическая эскалация к администратору",
-                        "Многоязычная поддержка (RU/EN)",
-                        "Персонализация ответов под тон клиники",
+"Персонализация ответов под тон клиники",
                         "6 месяцев технической поддержки",
                         "До 20 часов доработок и дообучения ИИ",
                       ].map((item, i) => (
