@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jolylollyq.github.io/kp-site/sitemap.xml
