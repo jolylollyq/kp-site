@@ -367,7 +367,7 @@ export function KpPage() {
               </p>
             </FadeIn>
             
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
               <FadeIn delay={0.1}>
                 <div className="rounded-xl p-6 border-gradient backdrop-blur-sm">
                   <div className="text-sm text-slate-400 mb-2">Средний чек</div>
@@ -380,13 +380,6 @@ export function KpPage() {
                   <div className="text-sm text-slate-400 mb-2">Новых записей/мес</div>
                   <div className="text-3xl font-bold mb-1 text-[#6366f1]">+40-80</div>
                   <div className="text-xs text-slate-500">через сайт, SEO и ИИ-бота</div>
-                </div>
-              </FadeIn>
-              <FadeIn delay={0.2}>
-                <div className="rounded-xl p-6 border-2 border-[#ec4899]/30 bg-gradient-to-br from-[#ec4899]/10 to-transparent backdrop-blur-sm">
-                  <div className="text-sm text-slate-400 mb-2">Доп. выручка/мес</div>
-                  <div className="text-3xl font-bold mb-1 text-[#ec4899]">100-200К ₽</div>
-                  <div className="text-xs text-slate-500">минимальная оценка</div>
                 </div>
               </FadeIn>
             </div>
@@ -408,10 +401,6 @@ export function KpPage() {
                         <span className="text-slate-400">ROI за год</span>
                         <span className="font-bold text-[#6366f1]">+1300%</span>
                       </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">Доп. выручка/год</span>
-                        <span className="font-bold">1.2-1.8М ₽</span>
-                      </div>
                     </div>
                   </div>
                   <div>
@@ -428,10 +417,6 @@ export function KpPage() {
                         <span className="text-slate-400">ROI за год</span>
                         <span className="font-bold text-[#ec4899]">+670%</span>
                       </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">Доп. выручка/год</span>
-                        <span className="font-bold">1.2-1.8М ₽</span>
-                      </div>
                     </div>
                   </div>
                   <div>
@@ -447,10 +432,6 @@ export function KpPage() {
                       <div className="flex justify-between">
                         <span className="text-slate-400">ROI за год</span>
                         <span className="font-bold text-[#f59e0b]">+375%</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-slate-400">Доп. выручка/год</span>
-                        <span className="font-bold">1.4-2.4М ₽</span>
                       </div>
                     </div>
                   </div>
