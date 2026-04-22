@@ -419,7 +419,7 @@ export function KpPage() {
                       <div className="w-2 h-2 rounded-full bg-[#6366f1] shrink-0 mt-2.5" />
                       <div>
                         <p className="text-sm text-slate-200 mb-1">Новые клиенты — бонус сверху</p>
-                        <p className="text-xs text-slate-400">Привлечение новых клиентов через поиск зависит от вашей маркетинговой стратегии. Мы обеспечиваем инструмент — результат зависит от его использования</p>
+                        <p className="text-xs text-slate-400">Привлечение новых клиентов через поиск зависит от вашей маркетинговой стратегии. Я обеспечиваю инструмент — результат зависит от его использования</p>
                       </div>
                     </div>
                   </div>
@@ -1030,7 +1030,7 @@ export function KpPage() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="text-slate-400 text-lg mb-12 max-w-2xl">
-                Ваша уверенность — наш приоритет
+                Ваша уверенность — мой приоритет
               </p>
             </FadeIn>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
