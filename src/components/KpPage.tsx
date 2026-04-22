@@ -395,11 +395,11 @@ export function KpPage() {
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
                         <span className="text-slate-400">Окупаемость</span>
-                        <span className="font-bold text-[#6366f1]">1-2 мес</span>
+                        <span className="font-bold text-[#6366f1]">2-3 мес</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">ROI за год</span>
-                        <span className="font-bold text-[#6366f1]">+1300%</span>
+                        <span className="font-bold text-[#6366f1]">+340-680%</span>
                       </div>
                     </div>
                   </div>
@@ -411,11 +411,11 @@ export function KpPage() {
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
                         <span className="text-slate-400">Окупаемость</span>
-                        <span className="font-bold text-[#ec4899]">2-3 мес</span>
+                        <span className="font-bold text-[#ec4899]">3-4 мес</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">ROI за год</span>
-                        <span className="font-bold text-[#ec4899]">+670%</span>
+                        <span className="font-bold text-[#ec4899]">+120-340%</span>
                       </div>
                     </div>
                   </div>
@@ -427,19 +427,20 @@ export function KpPage() {
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
                         <span className="text-slate-400">Окупаемость</span>
-                        <span className="font-bold text-[#f59e0b]">3-5 мес</span>
+                        <span className="font-bold text-[#f59e0b]">4-6 мес</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">ROI за год</span>
-                        <span className="font-bold text-[#f59e0b]">+375%</span>
+                        <span className="font-bold text-[#f59e0b]">+56-210%</span>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="mt-6 pt-6 border-t border-white/10">
-                  <p className="text-xs text-slate-500">
-                    * Расчёт основан на средних показателях ветклиник в городах 500К+ населения. 
-                    Фактические результаты зависят от конкуренции, качества услуг и маркетинга.
+                  <p className="text-xs text-slate-500 leading-relaxed">
+                    * Консервативная оценка. Расчёт: средний чек ~2500₽, 20-40 новых записей/мес после выхода на стабильный трафик 
+                    (первые 2-3 месяца трафик минимален). Фактические результаты зависят от конкуренции в вашем районе, 
+                    качества услуг, контекстной рекламы и SEO-продвижения. Сайт — это инструмент, а не гарантия продаж.
                   </p>
                 </div>
               </div>
@@ -521,7 +522,7 @@ export function KpPage() {
                     </p>
                     <div className="flex items-center gap-2 text-xs text-[#6366f1]">
                       <TrendingUp className="w-3 h-3" />
-                      <span>Окупаемость: 1-2 месяца</span>
+                      <span>Окупаемость: 2-3 месяца</span>
                     </div>
                   </div>
                   <div className="space-y-3 mb-6">
@@ -572,7 +573,7 @@ export function KpPage() {
                     </p>
                     <div className="flex items-center gap-2 text-xs text-[#ec4899]">
                       <TrendingUp className="w-3 h-3" />
-                      <span>Окупаемость: 2-3 месяца</span>
+                      <span>Окупаемость: 3-4 месяца</span>
                     </div>
                   </div>
                   <div className="space-y-3 mb-6">
@@ -662,7 +663,7 @@ export function KpPage() {
                       <span className="text-2xl text-slate-400">₽</span>
                     </div>
                     <p className="text-sm text-slate-400 mb-4">
-                      Срок: 30–35 рабочих дней • Окупаемость: 3-5 месяцев
+                      Срок: 30–35 рабочих дней • Окупаемость: 4-6 месяцев
                     </p>
                     <p className="text-sm font-semibold text-[#f59e0b] mb-4 flex items-center gap-2">
                       <ArrowRight className="w-4 h-4" />
