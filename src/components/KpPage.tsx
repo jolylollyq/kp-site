@@ -657,9 +657,6 @@ export function KpPage() {
                         "Помощь в записи на приём через чат 24/7",
                         "Ответы на типовые вопросы о клинике и услугах",
                         "Интеграция с Telegram/Max/сайтом",
-                        "Обучение ИИ на базе знаний вашей клиники",
-                        "Аналитика диалогов и популярных запросов",
-                        "Автоматическая эскалация к администратору",
 "Персонализация ответов под тон клиники",
                         "6 месяцев технической поддержки",
                         "До 20 часов доработок и дообучения ИИ",
@@ -1004,6 +1001,82 @@ export function KpPage() {
                       <p className="text-xs text-[#6366f1]">
                         <strong>Решение:</strong> Интуитивный интерфейс, видео-инструкции, персональное обучение 1-2 часа, поддержка 3 месяца
                       </p>
+                    </div>
+                  </div>
+                </div>
+              </FadeIn>
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* Whitelist Readiness */}
+      <AnimatedSection className="py-16 sm:py-20 lg:py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <FadeIn>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
+                  Техническая база
+                </h2>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <p className="text-slate-400 text-lg mb-12 max-w-2xl">
+                Готовность к «белым спискам»
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={0.15}>
+              <div className="rounded-2xl p-8 border-2 border-[#6366f1]/20 bg-gradient-to-br from-[#6366f1]/5 to-transparent backdrop-blur-sm mb-6">
+                <h3 className="font-bold text-lg text-[#6366f1] mb-4">Условия Минцифры для непрерывной работы</h3>
+                <p className="text-sm text-slate-300 leading-relaxed">
+                  Государство ведёт перечень ресурсов («белый список»), доступных даже при временных ограничениях мобильного интернета. В него уже активно включают региональные сервисы в сфере здравоохранения.
+                </p>
+              </div>
+            </FadeIn>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <FadeIn delay={0.2}>
+                <div className="rounded-xl p-6 border border-[#ec4899]/20 bg-[#ec4899]/5 backdrop-blur-sm">
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="w-8 h-8 rounded-lg bg-[#ec4899]/20 flex items-center justify-center shrink-0">
+                      <span className="text-[#ec4899] text-sm font-bold">1</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-200 mb-2">Обязательное требование</h4>
+                      <p className="text-sm text-slate-400">Все серверы должны быть на территории РФ</p>
+                    </div>
+                  </div>
+                </div>
+              </FadeIn>
+
+              <FadeIn delay={0.25}>
+                <div className="rounded-xl p-6 border border-[#6366f1]/20 bg-[#6366f1]/5 backdrop-blur-sm">
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="w-8 h-8 rounded-lg bg-[#6366f1]/20 flex items-center justify-center shrink-0">
+                      <span className="text-[#6366f1] text-sm font-bold">2</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-200 mb-2">Моя ответственность</h4>
+                      <p className="text-sm text-slate-400">Я размещаю ваш сайт на российском хостинге, обеспечивая полное соответствие этому ключевому критерию</p>
+                    </div>
+                  </div>
+                </div>
+              </FadeIn>
+
+              <FadeIn delay={0.3}>
+                <div className="rounded-xl p-6 border border-[#f59e0b]/20 bg-[#f59e0b]/5 backdrop-blur-sm">
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="w-8 h-8 rounded-lg bg-[#f59e0b]/20 flex items-center justify-center shrink-0">
+                      <span className="text-[#f59e0b] text-sm font-bold">3</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-slate-200 mb-2">Ваш следующий шаг</h4>
+                      <p className="text-sm text-slate-400">Имея эту базу, вы сможете самостоятельно подать заявку на включение в список через региональные власти</p>
                     </div>
                   </div>
                 </div>
