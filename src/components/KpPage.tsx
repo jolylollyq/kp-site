@@ -363,7 +363,7 @@ export function KpPage() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="text-slate-400 text-lg mb-12 max-w-2xl">
-                Мы не обещаем miracles — мы считаем риски
+                Не обещаю чудес — считаю риски
               </p>
             </FadeIn>
 
