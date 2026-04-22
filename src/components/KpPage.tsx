@@ -25,12 +25,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const contactInfo = {
-  name: "Турченко Сергей Викторович",
-  role: "Самозанятый веб-разработчик",
-  inn: "302200893635",
-  phone: "+7 (904) 415-00-78",
   email: "jolyweb.dev@mail.ru",
-  city: "Волгоград, Россия",
   demoUrl: "https://jolylollyq.github.io/vet-clinic-site/",
 };
 
@@ -58,6 +53,7 @@ const solutions = [
   { icon: Clock, text: "Автоматизация записи на приём 24/7", metric: "35% записей после 20:00" },
   { icon: Users, text: "Сокращение нагрузки на администраторов", metric: "-3-5 часов/день" },
   { icon: Award, text: "Повышение доверия через профессиональный имидж", metric: "Конверсия 15-25%" },
+  { icon: Sparkles, text: "ИИ-ассистент для консультаций и записи", metric: "Автоответ 24/7" },
 ];
 
 const techStack = [
@@ -248,34 +244,106 @@ export function KpPage() {
           </FadeIn>
 
           <FadeIn delay={0.3}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl">
               <div className="border-gradient rounded-xl p-6 backdrop-blur-sm">
                 <div className="flex items-start gap-3 mb-3">
                   <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center shrink-0">
                     <Users className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 mb-1">Исполнитель</p>
-                    <p className="font-semibold text-sm">{contactInfo.name}</p>
-                    <p className="text-slate-400 text-xs mt-1">{contactInfo.role}</p>
+                    <p className="text-xs text-slate-500 mb-1">Разработчик</p>
+                    <p className="font-semibold text-sm">Full-stack Developer</p>
+                    <p className="text-slate-400 text-xs mt-1">Next.js • React • TypeScript</p>
                   </div>
                 </div>
               </div>
               <div className="border-gradient rounded-xl p-6 backdrop-blur-sm">
                 <div className="flex items-start gap-3 mb-3">
                   <div className="w-10 h-10 rounded-lg gradient-accent flex items-center justify-center shrink-0">
-                    <Phone className="w-5 h-5 text-white" />
+                    <Mail className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 mb-1">Контакты</p>
-                    <p className="font-semibold text-sm">{contactInfo.phone}</p>
-                    <p className="text-slate-400 text-xs mt-1">{contactInfo.email}</p>
+                    <p className="text-xs text-slate-500 mb-1">Контакт</p>
+                    <a href={`mailto:${contactInfo.email}`} className="font-semibold text-sm hover:text-[#6366f1] transition-colors">
+                      {contactInfo.email}
+                    </a>
+                    <p className="text-slate-400 text-xs mt-1">Ответ в течение 24 часов</p>
                   </div>
                 </div>
               </div>
             </div>
-          </FadeIn>
-        </div>
+              </FadeIn>
+
+              {/* AI Package */}
+              <FadeIn delay={0.2}>
+                <div className="relative rounded-2xl border-2 border-[#f59e0b]/40 bg-gradient-to-br from-[#f59e0b]/15 via-[#ec4899]/10 to-[#6366f1]/5 p-8 backdrop-blur-sm hover:border-[#f59e0b]/60 transition-all duration-300 shadow-elegant">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-gradient-to-r from-[#f59e0b] to-[#ec4899] text-white text-xs font-bold shadow-glow">
+                    Инновация 2026
+                  </div>
+                  <div className="mb-8">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#f59e0b]/10 text-[#f59e0b] text-xs font-semibold mb-4">
+                      <Sparkles className="w-3 h-3" />
+                      AI-Интеграция
+                    </div>
+                    <div className="flex items-baseline gap-2 mb-2">
+                      <span className="text-5xl font-bold bg-gradient-to-r from-[#f59e0b] via-[#ec4899] to-[#6366f1] bg-clip-text text-transparent">350 000</span>
+                      <span className="text-2xl text-slate-400">₽</span>
+                    </div>
+                    <p className="text-sm text-slate-400 mb-4">
+                      Срок: 30–35 рабочих дней
+                    </p>
+                    <div className="flex items-center gap-2 text-xs text-[#f59e0b]">
+                      <TrendingUp className="w-3 h-3" />
+                      <span>Окупаемость: 3-4 месяца</span>
+                    </div>
+                  </div>
+                  <div className="space-y-3 mb-6">
+                    <p className="text-sm font-semibold text-[#f59e0b] mb-4 flex items-center gap-2">
+                      <ArrowRight className="w-4 h-4" />
+                      Всё из премиум пакета +
+                    </p>
+                    {[
+                      "ИИ-ассистент на базе GPT-4 для консультаций",
+                      "Автоматический подбор специалиста по симптомам",
+                      "Помощь в записи на приём через чат 24/7",
+                      "Ответы на типовые вопросы о клинике и услугах",
+                      "Интеграция с Telegram/WhatsApp/сайтом",
+                      "Обучение ИИ на базе знаний вашей клиники",
+                      "Аналитика диалогов и популярных запросов",
+                      "Автоматическая эскалация к администратору",
+                      "Многоязычная поддержка (RU/EN)",
+                      "Персонализация ответов под тон клиники",
+                      "6 месяцев технической поддержки",
+                      "До 20 часов доработок и дообучения ИИ",
+                    ].map((item, i) => (
+                      <div key={i} className="flex gap-3">
+                        <Sparkles className="h-5 w-5 text-[#f59e0b] shrink-0 mt-0.5" />
+                        <span className="text-sm text-slate-300">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="pt-6 border-t border-white/10 space-y-4">
+                    <div className="rounded-lg p-4 bg-[#f59e0b]/10 border border-[#f59e0b]/20">
+                      <h4 className="text-sm font-semibold text-[#f59e0b] mb-2 flex items-center gap-2">
+                        <Zap className="w-4 h-4" />
+                        Как работает ИИ-ассистент
+                      </h4>
+                      <ul className="text-xs text-slate-400 space-y-1.5">
+                        <li>• Клиент описывает проблему питомца в чате</li>
+                        <li>• ИИ анализирует симптомы и рекомендует специалиста</li>
+                        <li>• Предлагает свободные слоты для записи</li>
+                        <li>• Отвечает на вопросы о ценах, графике, услугах</li>
+                        <li>• При сложных случаях передаёт диалог администратору</li>
+                      </ul>
+                    </div>
+                    <p className="text-xs text-slate-500">
+                      <strong className="text-slate-400">Обоснование цены:</strong> ~280 часов работы × 1250₽/час. 
+                      Включает интеграцию OpenAI API, обучение модели, разработку логики диалогов, тестирование.
+                    </p>
+                  </div>
+                </div>
+              </FadeIn>
+            </div>
       </section>
 
       {/* Problem */}
@@ -337,7 +405,7 @@ export function KpPage() {
                 Профессиональный сайт, который работает на вас 24/7
               </p>
             </FadeIn>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
               {solutions.map((solution, i) => (
                 <FadeIn key={i} delay={i * 0.08}>
                   <div className="group relative rounded-xl p-6 border-gradient hover:scale-105 transition-transform duration-300">
@@ -385,14 +453,14 @@ export function KpPage() {
               <FadeIn delay={0.15}>
                 <div className="rounded-xl p-6 border-gradient backdrop-blur-sm">
                   <div className="text-sm text-slate-400 mb-2">Новых записей/мес</div>
-                  <div className="text-3xl font-bold mb-1 text-[#6366f1]">+40-60</div>
-                  <div className="text-xs text-slate-500">через сайт и SEO</div>
+                  <div className="text-3xl font-bold mb-1 text-[#6366f1]">+40-80</div>
+                  <div className="text-xs text-slate-500">через сайт, SEO и ИИ-бота</div>
                 </div>
               </FadeIn>
               <FadeIn delay={0.2}>
                 <div className="rounded-xl p-6 border-2 border-[#ec4899]/30 bg-gradient-to-br from-[#ec4899]/10 to-transparent backdrop-blur-sm">
                   <div className="text-sm text-slate-400 mb-2">Доп. выручка/мес</div>
-                  <div className="text-3xl font-bold mb-1 text-[#ec4899]">100-150К ₽</div>
+                  <div className="text-3xl font-bold mb-1 text-[#ec4899]">100-200К ₽</div>
                   <div className="text-xs text-slate-500">минимальная оценка</div>
                 </div>
               </FadeIn>
@@ -400,20 +468,20 @@ export function KpPage() {
 
             <FadeIn delay={0.25}>
               <div className="rounded-2xl p-8 bg-gradient-to-br from-[#6366f1]/10 via-[#8b5cf6]/5 to-[#ec4899]/10 border border-[#6366f1]/20 backdrop-blur-sm">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div>
                     <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                      <span className="text-[#6366f1]">Базовый пакет</span>
-                      <span className="text-slate-500 text-base">100 000 ₽</span>
+                      <span className="text-[#6366f1]">Базовый</span>
+                      <span className="text-slate-500 text-base">100К ₽</span>
                     </h3>
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
                         <span className="text-slate-400">Окупаемость</span>
-                        <span className="font-bold text-[#6366f1]">1-2 месяца</span>
+                        <span className="font-bold text-[#6366f1]">1-2 мес</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">ROI за год</span>
-                        <span className="font-bold text-[#6366f1]">+1 200%</span>
+                        <span className="font-bold text-[#6366f1]">+1200%</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">Доп. выручка/год</span>
@@ -423,13 +491,13 @@ export function KpPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                      <span className="text-[#ec4899]">Премиум пакет</span>
-                      <span className="text-slate-500 text-base">200 000 ₽</span>
+                      <span className="text-[#ec4899]">Премиум</span>
+                      <span className="text-slate-500 text-base">200К ₽</span>
                     </h3>
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
                         <span className="text-slate-400">Окупаемость</span>
-                        <span className="font-bold text-[#ec4899]">2-3 месяца</span>
+                        <span className="font-bold text-[#ec4899]">2-3 мес</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-slate-400">ROI за год</span>
@@ -438,6 +506,26 @@ export function KpPage() {
                       <div className="flex justify-between">
                         <span className="text-slate-400">Доп. выручка/год</span>
                         <span className="font-bold">1.2-1.8М ₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                      <span className="text-[#f59e0b]">AI</span>
+                      <span className="text-slate-500 text-base">350К ₽</span>
+                    </h3>
+                    <div className="space-y-3 text-sm">
+                      <div className="flex justify-between">
+                        <span className="text-slate-400">Окупаемость</span>
+                        <span className="font-bold text-[#f59e0b]">3-4 мес</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-400">ROI за год</span>
+                        <span className="font-bold text-[#f59e0b]">+340%</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-slate-400">Доп. выручка/год</span>
+                        <span className="font-bold">1.4-2.4М ₽</span>
                       </div>
                     </div>
                   </div>
@@ -509,7 +597,7 @@ export function KpPage() {
                 Прозрачное ценообразование без скрытых платежей
               </p>
             </FadeIn>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {/* Basic */}
               <FadeIn>
                 <div className="relative rounded-2xl border border-[#6366f1]/20 bg-gradient-to-br from-[#6366f1]/5 to-transparent p-8 backdrop-blur-sm hover:border-[#6366f1]/40 transition-all duration-300">
@@ -741,21 +829,21 @@ export function KpPage() {
                 Гибкая схема оплаты по этапам
               </p>
             </FadeIn>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <FadeIn>
                 <div className="rounded-xl p-8 border-gradient backdrop-blur-sm">
                   <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
                     <span className="text-[#6366f1]">Базовый</span>
-                    <span className="text-slate-500">100 000 ₽</span>
+                    <span className="text-slate-500">100К ₽</span>
                   </h3>
                   <div className="space-y-4">
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#6366f1]/5 border border-[#6366f1]/10">
                       <span className="text-slate-400">Предоплата</span>
-                      <span className="font-bold text-lg">50 000 ₽ <span className="text-sm text-slate-500">(50%)</span></span>
+                      <span className="font-bold text-lg">50К ₽ <span className="text-sm text-slate-500">(50%)</span></span>
                     </div>
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#6366f1]/5 border border-[#6366f1]/10">
                       <span className="text-slate-400">После завершения</span>
-                      <span className="font-bold text-lg">50 000 ₽ <span className="text-sm text-slate-500">(50%)</span></span>
+                      <span className="font-bold text-lg">50К ₽ <span className="text-sm text-slate-500">(50%)</span></span>
                     </div>
                   </div>
                 </div>
@@ -764,20 +852,42 @@ export function KpPage() {
                 <div className="rounded-xl p-8 border-2 border-[#ec4899]/20 bg-gradient-to-br from-[#ec4899]/5 to-transparent backdrop-blur-sm">
                   <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
                     <span className="text-[#ec4899]">Премиум</span>
-                    <span className="text-slate-500">200 000 ₽</span>
+                    <span className="text-slate-500">200К ₽</span>
                   </h3>
                   <div className="space-y-4">
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#ec4899]/5 border border-[#ec4899]/10">
                       <span className="text-slate-400">Предоплата</span>
-                      <span className="font-bold text-lg">80 000 ₽ <span className="text-sm text-slate-500">(40%)</span></span>
+                      <span className="font-bold text-lg">80К ₽ <span className="text-sm text-slate-500">(40%)</span></span>
                     </div>
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#ec4899]/5 border border-[#ec4899]/10">
                       <span className="text-slate-400">После разработки</span>
-                      <span className="font-bold text-lg">60 000 ₽ <span className="text-sm text-slate-500">(30%)</span></span>
+                      <span className="font-bold text-lg">60К ₽ <span className="text-sm text-slate-500">(30%)</span></span>
                     </div>
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#ec4899]/5 border border-[#ec4899]/10">
                       <span className="text-slate-400">После завершения</span>
-                      <span className="font-bold text-lg">60 000 ₽ <span className="text-sm text-slate-500">(30%)</span></span>
+                      <span className="font-bold text-lg">60К ₽ <span className="text-sm text-slate-500">(30%)</span></span>
+                    </div>
+                  </div>
+                </div>
+              </FadeIn>
+              <FadeIn delay={0.2}>
+                <div className="rounded-xl p-8 border-2 border-[#f59e0b]/20 bg-gradient-to-br from-[#f59e0b]/5 to-transparent backdrop-blur-sm">
+                  <h3 className="font-bold text-xl mb-6 flex items-center gap-2">
+                    <span className="text-[#f59e0b]">AI</span>
+                    <span className="text-slate-500">350К ₽</span>
+                  </h3>
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center p-4 rounded-lg bg-[#f59e0b]/5 border border-[#f59e0b]/10">
+                      <span className="text-slate-400 text-sm">Предоплата</span>
+                      <span className="font-bold">140К ₽ <span className="text-xs text-slate-500">(40%)</span></span>
+                    </div>
+                    <div className="flex justify-between items-center p-4 rounded-lg bg-[#f59e0b]/5 border border-[#f59e0b]/10">
+                      <span className="text-slate-400 text-sm">После основной разработки</span>
+                      <span className="font-bold">105К ₽ <span className="text-xs text-slate-500">(30%)</span></span>
+                    </div>
+                    <div className="flex justify-between items-center p-4 rounded-lg bg-[#f59e0b]/5 border border-[#f59e0b]/10">
+                      <span className="text-slate-400 text-sm">После завершения</span>
+                      <span className="font-bold">105К ₽ <span className="text-xs text-slate-500">(30%)</span></span>
                     </div>
                   </div>
                 </div>
@@ -988,15 +1098,8 @@ export function KpPage() {
                 <FadeIn delay={0.3}>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                     <a
-                      href={`tel:${contactInfo.phone}`}
-                      className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl gradient-primary font-semibold text-white hover:shadow-glow transition-all duration-300 group"
-                    >
-                      <Phone className="h-5 w-5" />
-                      {contactInfo.phone}
-                    </a>
-                    <a
                       href={`mailto:${contactInfo.email}`}
-                      className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl border-gradient font-semibold hover:bg-white/5 transition-all duration-300 group"
+                      className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl gradient-primary font-semibold text-white hover:shadow-glow transition-all duration-300 group"
                     >
                       <Mail className="h-5 w-5" />
                       {contactInfo.email}
@@ -1005,13 +1108,9 @@ export function KpPage() {
                 </FadeIn>
                 <FadeIn delay={0.4}>
                   <div className="pt-8 border-t border-white/10">
-                    <p className="font-semibold text-lg mb-2">{contactInfo.name}</p>
-                    <p className="text-slate-400 text-sm mb-3">{contactInfo.role}</p>
-                    <div className="flex items-center justify-center gap-4 text-xs text-slate-500">
-                      <span>ИНН: {contactInfo.inn}</span>
-                      <span>•</span>
-                      <span>{contactInfo.city}</span>
-                    </div>
+                    <p className="text-slate-400 text-sm">
+                      Отправьте запрос на почту — отвечу в течение 24 часов с детальным планом работы и ответами на ваши вопросы
+                    </p>
                   </div>
                 </FadeIn>
               </div>
@@ -1024,7 +1123,7 @@ export function KpPage() {
       <footer className="py-8 border-t border-white/5">
         <div className="container mx-auto px-4 text-center">
           <p className="text-sm text-slate-500">
-            &copy; 2026 {contactInfo.name}. Все права защищены.
+            &copy; 2026 Full-stack Web Development. Все права защищены.
           </p>
         </div>
       </footer>
