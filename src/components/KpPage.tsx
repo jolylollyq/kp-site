@@ -932,7 +932,7 @@ export function KpPage() {
               </p>
             </FadeIn>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <FadeIn delay={0.1}>
                 <div className="rounded-xl p-6 border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-sm">
                   <div className="flex items-start gap-3 mb-3">
@@ -983,7 +983,7 @@ export function KpPage() {
                         Downtime, медленная загрузка, проблемы с SSL
                       </p>
                       <p className="text-xs text-[#6366f1]">
-                        <strong>Решение:</strong> Проверенный хостинг (Timeweb, Beget) с SLA 99.9%, мониторинг uptime (UptimeRobot), автобэкапы
+                        <strong>Решение:</strong> Проверенный хостинг (Timeweb, Beget), мониторинг доступности, ежедневные автобэкапы
                       </p>
                     </div>
                   </div>
@@ -1009,6 +1009,41 @@ export function KpPage() {
                 </div>
               </FadeIn>
             </div>
+
+            <FadeIn delay={0.3}>
+              <div className="rounded-2xl p-8 border border-[#ec4899]/30 bg-gradient-to-br from-[#ec4899]/5 to-transparent backdrop-blur-sm">
+                <h3 className="font-bold text-xl mb-6 text-[#ec4899]">Типичные ловушки проектов — и как я их предотвращаю</h3>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-slate-200 mb-2">Ловушка бесплатной поддержки</h4>
+                    <p className="text-sm text-slate-400 mb-2">
+                      Через месяц после запуска у вас упал хостинг или закончился токен ИИ. Вы пишете в субботу вечером — а поддержки нет.
+                    </p>
+                    <p className="text-sm text-slate-300">
+                      <strong className="text-[#6366f1]">Как я решаю это:</strong> В договоре прописан гарантийный срок (1-3 месяца в зависимости от пакета). После — абонентская поддержка от 5 000 ₽/мес: мониторинг доступности, мелкие правки, оперативная реакция. Это не каприз — это ваша страховка и мой мотивация держать сайт в рабочем состоянии.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-200 mb-2">Ловушка «а давай ещё вот это»</h4>
+                    <p className="text-sm text-slate-400 mb-2">
+                      Вы договорились на онлайн-запись. Потом: «А давайте ИИ ещё будет отправлять рецепты по СМС? Это же легко!» Каждая такая «мелочь» — это дни работы.
+                    </p>
+                    <p className="text-sm text-slate-300">
+                      <strong className="text-[#6366f1]">Как я решаю это:</strong> Чёткое ТЗ до старта. Любая дополнительная фича оценивается отдельно (2 000-3 000 ₽/час). Фраза-спасатель: «Отличная идея — это увеличит бюджет на X и сдвинет срок на Y. Запустим текущий функционал, а эту фичу сделаем вторым этапом».
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-200 mb-2">Ловушка «а дизайн?»</h4>
+                    <p className="text-sm text-slate-400 mb-2">
+                      Разработчик и дизайнер — разные профессии. Сайт работает, но выглядит как «сделал программист».
+                    </p>
+                    <p className="text-sm text-slate-300">
+                      <strong className="text-[#6366f1]">Как я решаю это:</strong> Использую профессиональные UI-киты (shadcn/ui), которые выглядят дорого и чисто — интерфейс собирается как конструктор. При необходимости привлекаю дизайнера-партнёра: вы получаете продукт, а не компромисс между функциональностью и внешним видом.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
           </div>
         </div>
       </AnimatedSection>
