@@ -127,7 +127,7 @@ const faqs = [
   },
   {
     q: "Что если у нас нет профессиональных фотографий?",
-    a: "Помогу подобрать качественные стоковые изображения (Unsplash, Pexels) или порекомендую фотографа. Также могу оптимизировать имеющиеся фото (кадрирование, цветокоррекция, сжатие для web).",
+    a: "Помогу подобрать качественные стоковые изображения (Unsplash, Pexels) или порекомендую фотографа.",
   },
   {
     q: "Можно ли добавить функционал после запуска?",
@@ -897,7 +897,7 @@ export function KpPage() {
                       <span className="font-bold">128К ₽ <span className="text-xs text-slate-500">(40%)</span></span>
                     </div>
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#f59e0b]/5 border border-[#f59e0b]/10">
-                      <span className="text-slate-400 text-sm">После основной разработки</span>
+                      <span className="text-slate-400 text-sm">После разработки</span>
                       <span className="font-bold">96К ₽ <span className="text-xs text-slate-500">(30%)</span></span>
                     </div>
                     <div className="flex justify-between items-center p-4 rounded-lg bg-[#f59e0b]/5 border border-[#f59e0b]/10">
