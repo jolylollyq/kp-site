@@ -209,69 +209,65 @@ export function KpPage() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="relative pt-20 pb-16 sm:pt-28 sm:pb-20 lg:pt-36 lg:pb-24 overflow-hidden">
-        {/* Decorative elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#6366f1] rounded-full blur-[120px] opacity-20" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#ec4899] rounded-full blur-[140px] opacity-15" />
-        </div>
-
+      <section className="relative pt-20 pb-16 sm:pt-28 sm:pb-20 lg:pt-36 lg:pb-24">
         <div className="container mx-auto px-4 relative z-10">
-          <FadeIn>
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#6366f1]/30 bg-[#6366f1]/5 px-4 py-2 text-xs sm:text-sm font-medium mb-8 backdrop-blur-sm">
-              <Sparkles className="w-3.5 h-3.5 text-[#6366f1]" />
-              <span className="text-[#6366f1]">Коммерческое предложение</span>
-            </div>
-          </FadeIn>
+          <div className="max-w-4xl mx-auto text-center">
+            <FadeIn>
+              <div className="inline-flex items-center gap-2 rounded-full border border-[#6366f1]/30 bg-[#6366f1]/5 px-4 py-2 text-xs sm:text-sm font-medium mb-8 backdrop-blur-sm">
+                <Sparkles className="w-3.5 h-3.5 text-[#6366f1]" />
+                <span className="text-[#6366f1]">Коммерческое предложение</span>
+              </div>
+            </FadeIn>
 
-          <FadeIn delay={0.1}>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight mb-8 leading-[1.1]">
-              Разработка сайта
-              <br />
-              <span className="bg-gradient-to-r from-[#6366f1] via-[#8b5cf6] to-[#ec4899] bg-clip-text text-transparent">
-                для ветклиники
-              </span>
-            </h1>
-          </FadeIn>
+            <FadeIn delay={0.1}>
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight mb-8 leading-[1.1]">
+                Разработка сайта
+                <br />
+                <span className="bg-gradient-to-r from-[#6366f1] via-[#8b5cf6] to-[#ec4899] bg-clip-text text-transparent">
+                  для ветклиники
+                </span>
+              </h1>
+            </FadeIn>
 
-          <FadeIn delay={0.2}>
-            <p className="text-xl text-slate-400 mb-12 max-w-2xl leading-relaxed">
-              Современный сайт на Next.js с онлайн-записью, каталогом услуг и
-              SEO-оптимизацией. Привлекайте клиентов из поиска и автоматизируйте
-              запись 24/7.
-            </p>
-          </FadeIn>
+            <FadeIn delay={0.2}>
+              <p className="text-xl text-slate-400 mb-12 max-w-2xl leading-relaxed mx-auto">
+                Современный сайт на Next.js с онлайн-записью, каталогом услуг и
+                SEO-оптимизацией. Привлекайте клиентов из поиска и автоматизируйте
+                запись 24/7.
+              </p>
+            </FadeIn>
 
-          <FadeIn delay={0.3}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl">
-              <div className="border-gradient rounded-xl p-6 backdrop-blur-sm">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center shrink-0">
-                    <Users className="w-5 h-5 text-white" />
+            <FadeIn delay={0.3}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <div className="border-gradient rounded-xl p-6 backdrop-blur-sm">
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center shrink-0">
+                      <Users className="w-5 h-5 text-white" />
+                    </div>
+                    <div className="text-left">
+                      <p className="text-xs text-slate-500 mb-1">Разработчик</p>
+                      <p className="font-semibold text-sm">Full-stack Developer</p>
+                      <p className="text-slate-400 text-xs mt-1">Next.js • React • TypeScript</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-xs text-slate-500 mb-1">Разработчик</p>
-                    <p className="font-semibold text-sm">Full-stack Developer</p>
-                    <p className="text-slate-400 text-xs mt-1">Next.js • React • TypeScript</p>
+                </div>
+                <div className="border-gradient rounded-xl p-6 backdrop-blur-sm">
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg gradient-accent flex items-center justify-center shrink-0">
+                      <Mail className="w-5 h-5 text-white" />
+                    </div>
+                    <div className="text-left">
+                      <p className="text-xs text-slate-500 mb-1">Контакт</p>
+                      <a href={`mailto:${contactInfo.email}`} className="font-semibold text-sm hover:text-[#6366f1] transition-colors">
+                        {contactInfo.email}
+                      </a>
+                      <p className="text-slate-400 text-xs mt-1">Ответ в течение 24 часов</p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="border-gradient rounded-xl p-6 backdrop-blur-sm">
-                <div className="flex items-start gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-lg gradient-accent flex items-center justify-center shrink-0">
-                    <Mail className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-slate-500 mb-1">Контакт</p>
-                    <a href={`mailto:${contactInfo.email}`} className="font-semibold text-sm hover:text-[#6366f1] transition-colors">
-                      {contactInfo.email}
-                    </a>
-                    <p className="text-slate-400 text-xs mt-1">Ответ в течение 24 часов</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </FadeIn>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
